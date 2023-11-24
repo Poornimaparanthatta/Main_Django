@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Delete Recruiter</h2>
+
+<p>Are you sure you want to delete {{ recruiter.fullname }}?</p>
+
+<form method="post">
+  {% csrf_token %}
+  <input type="submit" value="Confirm Delete">
+</form>
+
+<a href="{% url 'admin_dashboard' %}">Cancel</a>
+
+</body>
+</html>

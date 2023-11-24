@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Applied Jobs</h1>
+
+
+    <ul>
+      {% for applied_job in applied_jobs_list %}
+        <li>
+          <strong>Company Name:</strong> {{ applied_job.company_name }}<br>
+          <strong>Job Title:</strong> {{ applied_job.job_title }}<br>
+          <strong>Application Status:</strong> {{ applied_job.application_status }}
+        </li>
+        <br>
+        {% endfor %}
+</body>
+</html>
